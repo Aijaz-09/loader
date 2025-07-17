@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Animation Try</title>
+        <meta charset="utf-8">
+  	<style> 
+    	.loader {
+			height: 200px;
+			width: 200px;
+			border-radius: 50%;
+			border: 20px solid white;
+			border-top: 20px solid black;
+			animation-name: anima;
+			animation-duration: 1s;
+			animation-timing-function: linear;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+			/* animation: anima 2s ease-in-out 0s infite normal; */
+		}
+
+		.position {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+
+		
+		@keyframes anima {
+			from { transform: rotate(0deg); }
+			to { transform: rotate(360deg); }
+		}
+	</style>
+    </head>
+    <body>
+	<div class="position">
+		<div class="loader">
+		</div>
+	</div>	
+    </body>
+</html>
